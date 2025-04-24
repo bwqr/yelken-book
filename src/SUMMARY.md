@@ -1,6 +1,16 @@
 # Summary
 
 [Introduction](./introduction.md)
+[Getting Started]()
 
-- [Localization](./localization.md)
-- [Theming & Templates](./theming-templates.md)
+- [Goals]()
+  - [Security]()
+  - [Extendability]()
+  - [Speed]()
+- [Features]()
+  - [Localization](./localization.md)
+  - [Theming & Templates](./theming-templates.md)
+
+---
+
+[Yelken Announcement](./announcement.md)
