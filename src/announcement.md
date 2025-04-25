@@ -1,12 +1,14 @@
 # Yelken
+<sub>Published on 1 May 2025</sub>
+
 Welcome to Yelken's first alpha release announcement, a project described as a *Secure by Design, Extendable, and Speedy Next-Generation Content Management System (CMS)*.
 Yelken is a traditional CMS where you can both manage your contents (backend) and present them to your users (frontend).
 
 Literary, Yelken is a Turkish noun that means **sail** in English.
 It is free for everyone to use, and its source code is available on [Github](https://github.com/bwqr/yelken).
 Under the hood, Yelken utilizes [Rust](https://www.rust-lang.org/) programming language and libraries developed around it to achieve its goals.
-The project is still under heavy development and may contain bugs or missing some features, but it is ready to be tested and experimented with.
-You can check the [examples](https://github.com/bwqr/yelken/tree/main/examples) folder in the repository to see Yelken in action.
+The project is still under heavy development and may contain bugs or missing some features, but it is ready to be tested and experimented with this first alpha release.
+You can check out the [examples](https://github.com/bwqr/yelken/tree/main/examples) folder in the repository to see Yelken in action.
 
 While many CMS projects exist, such as traditional ones like WordPress and Drupal or headless ones, Yelken has many ambitious goals to distinguish itself from others.
 This distinction can be observable in its description, where each word has a strong meaning in the Yelken and defines its identity.
@@ -22,7 +24,7 @@ WebAssembly enables developers to use their favorite programming languages that 
 The diversity of supported programming languages should bring developers with different backgrounds into Yelken plugin development.
 The capabilities of plugins are still under investigation, but the plugin architecture has been solidified in Yelken.
 
-Lastly, besides security and extendability, Yelken aims to be a Speedy CMS by requiring very low computing resources (CPU and memory mainly) and serving many requests concurrently and quickly.
+Lastly, besides security and extendability, Yelken aims to be a *Speedy* CMS by requiring very low computing resources (CPU and memory mainly) and serving many requests concurrently and quickly.
 Thanks to the software stack Yelken uses, hosting many Yelken instances on a computing device with very few resources is easy.
 
 In addition to ambitious goals, Yelken tries to be user-friendly from out of the box with sane defaults and easy to deploy to any hosting solutions.
@@ -48,7 +50,12 @@ Users can also override these translations either globally or scoped per theme.
 URL paths of displayed pages can also be localized.
 For instance, you might have a page at `/article/{id}` displaying an article identified with `id` path parameter in English.
 You can also have a corresponding Turkish page at path `/makale/{id}` displaying the same article in Turkish.
-Behind the scenes, these two pages are linked with the same `name`, enabling localizing the link inside the anchor tag.
+Behind the scenes, these two pages are linked with the same `name`, enabling localizing the link inside the HTML anchor tag.
+```html
+<a href="{{ localize_url(page='article', params=[article.id]) }}">
+  {{ article.title }}
+</a>
+```
 
 Finally, to enable content localization, each field of a model can be marked as localizable, allowing admins to create different values for each locale while creating or updating a content's field.
 If a field is not marked as localizable, its single value can be used regardless of the resolved locale.
@@ -105,19 +112,20 @@ For example, we can define a page with `/article/{id}` as its URL path and `arti
 When the user requests `/article/hello-world` URL path, Yelken will find the `article.html` template and render it.
 
 ## Current Status
-At the moment, most of the features above are implemented in Yelken.
+In this first alpha release, most of the features above are implemented in Yelken.
 However, a huge piece is missing from the puzzle.
 Yelken lacks a User Interface (UI) or an admin panel.
 This admin panel's infrastructure does exist, but the necessary pages and components to interact with features have not been implemented yet.
-The only possible way to interact with Yelken is by using its REST API.
+At the moment, the only possible way to interact with Yelken is by using its REST API.
 
 Since features are still in heavy development, developing a UI and adapting it to changes does not make sense.
 Once features are stabilized, I can start developing the admin panel.
 
 ## Future of Yelken
 Yelken has many compelling features, most of which have been implemented.
-From now on, stabilizing these features and fine-tuning them according to the user's needs will be the next step.
-In the meantime, missing parts of features will also be implemented, such as the admin panel and stable plugin interface.
+The next step will be to implement the remaining parts, stabilize features, and fine-tune them according to the user's needs.
+During this phase, there will be a couple more alpha releases, which will eventually lead to a beta release.
+You can track the development from the [Yelken 0.1.0](https://github.com/users/bwqr/projects/3) project.
 
 Afterward, the planned features can start being added to Yelken. In this case, form handling is a high priority since admins need to receive input from their users.
 Secondly, a Yelken instance needs to be observable and provide metrics to inform website traffic and performance.
@@ -142,13 +150,14 @@ At the moment, I am not planning to add any feature that will be feature-gated b
 All the features you can get in the SaaS version will be available to you, too. You only need to manage all the required resources by yourself.
 For example, if you need to utilize the observability feature of Yelken, you may need to set up a time series database to collect metrics periodically.
 
-To achieve providing Yelken as a SaaS product, Yelken employs a license that only restricts its usage when another company wants to provide Yelken as a SaaS product.
+To keep this product as a revenue source for Yelken, Yelken employs a license that only restricts its usage when another company wants to provide Yelken as a SaaS product.
 The following section talks about this license.
 
 ## License
 Yelken is currently licensed with Business Source License 1.1.
 This license is not meant to prevent any **individual** from benefitting Yelken.
 Individuals can use and deploy Yelken to production.
+Individuals can also use Yelken to provide paid support to setup and manage Yelken for their customers.
 Even companies can utilize Yelken to manage their websites.
 The primary motivation behind choosing this license is to prevent a company from providing Yelken as a SaaS product without acquiring an explicit license.
 
@@ -163,4 +172,5 @@ Additionally, here are a few links to check out more about Yelken:
 * Repository: [https://github.com/bwqr/yelken](https://github.com/bwqr/yelken)
 * Book: [https://bwqr.github.io/yelken-book](https://bwqr.github.io/yelken-book)
 * Examples: [https://github.com/bwqr/yelken/tree/main/examples](https://github.com/bwqr/yelken/tree/main/examples)
+* Towards Yelken 0.1.0: [https://github.com/users/bwqr/projects/3](https://github.com/users/bwqr/projects/3)
 * Discord server: [https://discord.gg/D4bfHr8neh](https://discord.gg/D4bfHr8neh)
