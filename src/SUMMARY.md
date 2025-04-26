@@ -1,15 +1,13 @@
 # Summary
 
 [Introduction](./introduction.md)
-[Getting Started]()
 
-- [Goals]()
-  - [Security]()
-  - [Extendability]()
-  - [Speed]()
-- [Features]()
-  - [Localization](./localization.md)
-  - [Theming & Templates](./theming-templates.md)
+- [Getting Started](./getting-started.md)
+- [Architecture](./architecture/README.md)
+  - [Localization]()
+  - [Theming & Templates]()
+  - [Content Management]()
+  - [Plugin]()
 
 ---
 
