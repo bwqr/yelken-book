@@ -4,14 +4,14 @@
 Welcome to Yelken's first alpha release announcement, a project described as a *Secure by Design, Extendable, and Speedy Next-Generation Content Management System (CMS)*.
 Yelken is a traditional CMS where you can both manage your contents (backend) and present them to your users (frontend).
 
-Literary, Yelken is a Turkish noun that means **sail** in English.
+Literary, Yelken is a Turkish noun that means **sail** in English (check out [TDK](https://sozluk.gov.tr/?ara=yelken) for its pronunciation).
 It is free for everyone to use, and its source code is available on [Github](https://github.com/bwqr/yelken).
 Under the hood, Yelken utilizes [Rust](https://www.rust-lang.org/) programming language and libraries developed around it to achieve its goals.
 The project is still under heavy development and may contain bugs or missing some features, but it is ready to be tested and experimented with this first alpha release.
 You can check out the [examples](https://github.com/bwqr/yelken/tree/main/examples) folder in the repository to see Yelken in action.
 
 While many CMS projects exist, such as traditional ones like WordPress and Drupal or headless ones, Yelken has many ambitious goals to distinguish itself from others.
-This distinction can be observable in its description, where each word has a strong meaning in the Yelken and defines its identity.
+This distinction is observable in its description, where each word has a strong meaning in the Yelken and defines its identity.
 
 To begin with *Secure by Design*, Yelken's highest priority is keeping itself from being infected by malicious user input or a malicious plugin.
 No matter what input is given to Yelken, it must continue sustaining its functionalities and not unintentionally affect other users, such as causing cross-site scripting (XSS) and other possible attacks.
