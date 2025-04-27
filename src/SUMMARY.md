@@ -8,7 +8,3 @@
   - [Theming & Templates]()
   - [Content Management]()
   - [Plugin]()
-
----
-
-[Yelken Announcement](./announcement.md)

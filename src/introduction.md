@@ -9,7 +9,7 @@ Similar to WordPress, it delivers a traditional CMS experience by serving both a
 Literary, Yelken is a Turkish noun that means **sail** in English (check out [TDK](https://sozluk.gov.tr/?ara=yelken) for its pronunciation).
 It is free for everyone to use, and its source code is available on [GitHub](https://github.com/bwqr/yelken).
 Yelken is still under heavy development and may contain bugs or missing some features, but it is ready for experiments starting from its first alpha release.
-If you have not read the first alpha release announcement, you are highly encouraged to read it [here](/announcement.md).
+If you have not read the first alpha release announcement, you are highly encouraged to read it [here](https://bwqr.github.io/yelken-blog/first-announcement/).
 
 ## Goals
 
