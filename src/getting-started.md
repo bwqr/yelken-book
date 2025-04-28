@@ -5,6 +5,7 @@ This example contains a docker-compose file to setup a Postgresql database and Y
 You can also check out other examples to experiment with Yelken.
 
 If you want to build Yelken manually and run locally, proceed to following sections.
+When you are asked to run some command, please do it inside the [yelken](https://github.com/bwqr/yelken/tree/main/yelken) directory, unless specified otherwise.
 
 ### Prerequisites
 Before running Yelken, you need to have a few things installed on your machine.
@@ -68,11 +69,12 @@ Each environment variable is explained below:
 ### Running
 Once the configuration of Yelken is completed, you first need to build `app` by running following command inside the `app-client` directory:
 ```sh
+# cd app-client
 trunk build --public-url /assets/yelken
 ```
 
 
-This will compile the Yelken App and put its assets under `app-client/dist` directory. After that, you can start Yelken by running this simple command inside the root directory:
+This will compile the Yelken App and put its assets under `app-client/dist` directory. After that, you can start Yelken by running this simple command inside the `yelken` directory:
 ```sh
 cargo run
 ```
