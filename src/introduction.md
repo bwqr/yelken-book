@@ -32,5 +32,6 @@ For instance, to support server hostings where only PHP, Mysql, and Apache CGI a
 
 ## Next Step
 
-To get started with Yelken and run it on your machine or deploy it somewhere, you can continue with the [Getting Started](/getting-started.md) chapter.
-If you want to delve into its architecture and features, you may want to read [Architecture](/artchitecture.md) chapter, though it is not written yet.
+To get started with Yelken, you can continue with the [Getting Started](/getting-started/) chapter.
+It introduces [Playground](/getting-started/playground.md) that enables having a first experience with Yelken.
+<!-- If you want to delve into its architecture and features, you may want to read [Architecture](/artchitecture.md) chapter, though it is not written yet. -->
