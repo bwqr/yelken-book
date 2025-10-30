@@ -32,6 +32,13 @@ For instance, to support server hostings where only PHP, Mysql, and Apache CGI a
 
 ## Next Step
 
-To get started with Yelken, you can continue with the [Getting Started](/getting-started/) chapter.
-It introduces [Playground](/getting-started/playground.md) that enables having a first experience with Yelken.
-<!-- If you want to delve into its architecture and features, you may want to read [Architecture](/artchitecture.md) chapter, though it is not written yet. -->
+To get started with Yelken, you can continue with the [Getting Started](./getting-started) chapter.
+It introduces [Playground](./getting-started/playground.md) that enables having a first experience with Yelken.
+It also guides you through [Running Yelken](./getting-started/running-yelken.md) if you want to run Yelken on your local machine.
+
+After you have a Yelken instance running at somewhere, you can start learning how to use it by following the [Features](./features) chapter.
+Sections under this chapter explain each feature of Yelken in details.
+Following the features, you can look at [Examples](./examples) chapter to understand possible ways to use the Yelken.
+
+Once you decide to use Yelken in one of your website, you can check the [Deployments](./deployments) chapter to learn how to deploy Yelken to production. <!-- If you want to learn more about the Yelken's underlying architecture, [Architecture](./architecture) chapter is a good place to start. -->
+Lastly, you can check out the [Contributing](./contributing) page if you want to make any kind of contribution to Yelken.

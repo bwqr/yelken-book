@@ -5,6 +5,6 @@ Firstly, If you want to use and experiment with Yelken quickly, [Playground](/ge
 
 You can also easily spin up a Yelken instance on your local machine by following [hello-world](https://github.com/bwqr/yelken/tree/main/examples/hello-world) example.
 This example contains a docker-compose file to setup a Postgresql database and Yelken instance with appropriate configuration.
-You can check out other examples too to experiment with Yelken.
+You can check out other examples too to try the Yelken.
 
 If you want to build Yelken manually and run locally, you can read the [Running Yelken](/getting-started/running-yelken.md) page which has necessary instruction to compile and bring up the Yelken.
