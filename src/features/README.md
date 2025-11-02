@@ -5,7 +5,7 @@ In this regard, [Content Management System (CMS)](./cms.md) is an important feat
 Inside this feature, there are **Model**, **Content** and **Asset** concepts that define the structure of your contents and make it possible to create new ones.
 
 After defining the models for your contents, you can use [Appearance](./appearance.md) feature to design the appearance of your website with respect to these models.
-You can easily define what to rendering at which URL path.
+You can easily define what to render at which URL path.
 Moreover, you can install themes to easily use a predefined appearance.
 
 As a last feature, [Adminstration](./administration.md) lets you manage various options of Yelken, such as supported locales and settings.
