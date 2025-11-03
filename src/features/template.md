@@ -16,3 +16,11 @@ Once a template resource is created, you can edit its content as you wish and us
 A template resource can be provided by either a theme or a user.
 Thanks to [layer concept](../concepts/layer.md), Yelken allows you to override a theme's template by creating a template with same path either in global namespace or in theme's namespace.
 This also allows you to extend a theme by creating your own templates and using them in various places.
+
+## Special Templates
+
+When there is a problem during rendering a web page, such as not found page, Yelken renders a template that has special path.
+An example is when no matching page entry is found for a path.
+In this case, Yelken tries to render `__404__.html` template if it exists.
+You can create your own template with `__404__.html` path to customize the rendered page when Yelken responds the requests with `404` HTTP error code.
+Currently, Yelken does not have any other special templates but may be added in the future like customizing pages for `50x` error code.
