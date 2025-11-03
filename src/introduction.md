@@ -42,3 +42,14 @@ Following the features, you can look at [Examples](./examples) chapter to unders
 
 Once you decide to use Yelken in one of your website, you can check the [Deployments](./deployments) chapter to learn how to deploy Yelken to production. <!-- If you want to learn more about the Yelken's underlying architecture, [Architecture](./architecture) chapter is a good place to start. -->
 Lastly, you can check out the [Contributing](./contributing) page if you want to make any kind of contribution to Yelken.
+
+
+## Learn more
+Here are a few links to check out more about Yelken:
+
+* Website [yelken.io](https://yelken.io)
+* Repository: [github.com/bwqr/yelken](https://github.com/bwqr/yelken)
+* Blog: [blog.yelken.io](https://blog.yelken.io)
+* Playground: [playground.yelken.io](https://playground.yelken.io)
+* Examples: [github.com/bwqr/yelken/tree/main/examples](https://github.com/bwqr/yelken/tree/main/examples)
+* Discord server: [discord.gg/D4bfHr8neh](https://discord.gg/D4bfHr8neh)
