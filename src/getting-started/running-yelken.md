@@ -33,7 +33,7 @@ Each environment variable is explained below:
 * `YELKEN_SECRET_KEY`: Secret key used for cryptographic operations in Yelken. This includes signing Json Web Token (JWT) and hashing passwords.
 * `YELKEN_SITE_URL`: The full URL with its domain where Yelken runs on. For production deployments, this corresponds to your website domain.
 * `YELKEN_APP_URL`: The full URL with its domain where Yelken App runs on. This variable mostly has same value as `YELKEN_SITE_URL`. For local development, you may have app running on different origin though.
-* `YELKEN_UPLOAD_SIZE_LIMIT`: An integer variable indicating the maximum size of a request. Its unit is KiloByte (KB).
+* `YELKEN_UPLOAD_SIZE_LIMIT`: An integer variable indicating the maximum size of a request. Its unit is kilobyte (KB).
 * `YELKEN_RELOAD_TEMPLATES`: A boolean variable to decide whether templates and localization files should be reloaded on each request. This is useful for iteratively changing your templates or locales. For production, this should be set to false. Values `on`, `yes` and `true` are treated as true whereas any other value is treated as false.
 * `YELKEN_STORAGE_DIR`: Storage directory path that is used by Yelken as persistent storage. Right now, this path corresponds to a directory on filesystem. In the future, this can also point to an object storage such as AWS S3 bucket.
 * `YELKEN_TMP_DIR`: Directory to use for temporary operations, such as extracting themes and plugins to analyze them. This is decoupled from storage directory since this could point to a directory on filesystem for quick accesses.
@@ -52,9 +52,9 @@ Yelken requires some default values to be present in the database. For this purp
 ```sh
 cargo run -- setup --defaults --theme --theme-path ../themes/default
 ```
-This command will both create default values while also installing the theme located `themes/default` directory.
+This command will both create default values while also installing the theme located in `themes/default` directory.
 
-In order to access the Admin Panel, we need to create an admin user. Following command will create an admin user with given credentials. You can change the credentials as you wish:
+In order to access the App, we need to create an admin user. Following command will create an admin user with given credentials. You can change the credentials as you wish:
 ```sh
 echo '{ "name": "Admin", "email": "admin@yelken.my", "password" : "mypassword" }' | cargo run -- setup --admin
 ```
@@ -73,3 +73,4 @@ cargo run
 
 You can access the Yelken from the address specified in `YELKEN_BIND_ADDRESS`.
 If you did not change its default value, it should be accessible from [http://127.0.0.1:3000](http://127.0.0.1:3000) address.
+Lastly, the App should be accessible from  [http://127.0.0.1:3000/yk/app](http://127.0.0.1:3000/yk/app) address

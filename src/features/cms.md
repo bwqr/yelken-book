@@ -10,4 +10,4 @@ Once a content is created, you can control whether it should be visible to visit
 In addition to creating content, you can also upload assets, such as image and video files, to use them in various part of Yelken like contents or directly in templates.
 
 To speak about required permission for CMS feature, a user needs to have `CMS Read` permission to at least be able to access pages under `CMS` section of main menu in the App.
-In order to make any changes on models, contents or assets, a user needs to have corresponding `Model Write`, `Content Write` or `Asset Write` permission.
+In order to make any changes on models, contents or assets, a user needs to have corresponding `Model Write`, `Content Write` or `Asset Write` permissions.
