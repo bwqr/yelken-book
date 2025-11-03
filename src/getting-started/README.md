@@ -8,3 +8,5 @@ This example contains a docker-compose file to setup a Postgresql database and Y
 You can check out other examples too to try the Yelken.
 
 If you want to build Yelken manually and run locally, you can read the [Running Yelken](/getting-started/running-yelken.md) page which has necessary instruction to compile and bring up the Yelken.
+
+Lastly, you can also try [Yelken Cloud](https://yelken.io/cloud) to have a managed Yelken experience.
