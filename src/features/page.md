@@ -11,14 +11,12 @@ A localized page can have an entry for each locale in the Yelken.
 This way, you can have a page that has different paths for each locale.
 Additionally, it allows you to retrieve the path of a page for a specific locale by using its key.
 As an examle, consider two page entries:
-```
-     key   |    path    |  locale
-|-----------------------------------|
+
+|    key   |    path    |  locale   |
+|----------|------------|-----------|
 | articles | /articles  | en        |
-|-----------------------------------|
 | articles | /makaleler | tr        |
-|-----------------------------------|
-```
+
 Inside your templates, you can retrieve corresponding entry for visitor's locale by simply calling `get_url(page="articles")` function.
 
 There is one important note to keep in mind.
